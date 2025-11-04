@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-image: url('/static/images/nail-picture.jpg'); background-size: cover; background-position: center; height: 100vh; width: 60vw; padding: 20px;">
+    <h2>Services</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="serviceName" class="form-label">Service Name</label>
+            <input type="text" class="form-control" id="serviceName" name="name" placeholder="Enter service name" required>
+        </div>
+        <div class="mb-3">
+            <label for="servicePrice" class="form-label">Price</label>
+            <input type="number" class="form-control" id="servicePrice" name="price" placeholder="Enter price" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="serviceDuration" class="form-label">Duration (minutes)</label>
+            <input type="number" class="form-control" id="serviceDuration" name="duration" placeholder="Enter duration" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Service</button>
+    </form>
+    <hr>
+    <div class="row">
+        {% for service in services %}
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ service.name }}</h5>
+                        <p class="card-text">Price: ${{ service.price }}</p>
+                        <p class="card-text">Duration: {{ service.duration }} minutes</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#editServiceModal" 
+                           data-id="{{ service.id }}" data-name="{{ service.name }}" 
+                           data-price="{{ service.price }}" data-duration="{{ service.duration }}">Edit</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="modal fade" id="editServiceModal" tabindex="-1" role="dialog" aria-labelledby="editServiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editServiceModalLabel">Edit Service</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editServiceForm">
+                        <input type="hidden" id="editServiceId" name="id">
+                        <div class="form-group">
+                            <label for="editServiceName">Service Name</label>
+                            <input type="text" class="form-control" id="editServiceName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editServicePrice">Price</label>
+                            <input type="number" class="form-control" id="editServicePrice" name="price" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editServiceDuration">Duration (minutes)</label>
+                            <input type="number" class="form-control" id="editServiceDuration" name="duration" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #f5a623 !important;
+}
+
+body {
+    background-image: url('/static/images/nail-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    color: white; 
+}

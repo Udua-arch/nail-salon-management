@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-image: url('/static/images/nail-picture.jpg'); background-size: cover; background-position: center; height: 100vh; width: 60vw; padding: 20px;">
+    <h2>Appointments</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="customer" class="form-label">Customer</label>
+            <input type="text" class="form-control" id="customer" name="customer" placeholder="Enter customer name" required>
+        </div>
+        <div class="mb-3">
+            <label for="service" class="form-label">Service</label>
+            <input type="text" class="form-control" id="service" name="service" required>
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <input type="time" class="form-control" id="time" name="time" required>
+        </div>
+        <div class="mb-3">
+            <label for="staff" class="form-label">Staff</label>
+            <input type="text" class="form-control" id="staff" name="staff" placeholder="Enter staff name">
+        </div>
+        <button type="submit" class="btn btn-primary">Save Appointment</button>
+    </form>
+    <hr>
+    <ul>
+        {% for appointment in appointments %}
+            <li>
+                {{ appointment.customer }} - 
+                {{ appointment.service }} - 
+                {{ appointment.date }} - 
+                {{ appointment.time }} - 
+                {{ appointment.staff }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

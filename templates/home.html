@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="text-center py-5 bg-light" style="background: url('/static/images/hero-nail-salon.jpg') no-repeat center center/cover; height: 500px;">
+    <h1 class="display-4 text-purple font-weight-bold" style="text-shadow: 2px 2px 5px #f5f1f1;">Welcome to Ethereal Touch Nail Boutique</h1>
+    <p class="text-white lead" style="text-shadow: 1px 1px 3px #000;">Redefining beauty and elegance, one nail at a time.</p>
+    <a href="/appointments" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
+</div>
+
+
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="font-weight-bold mb-4">About Us</h2>
+        <p class="text-muted lead">At <strong>Ethereal Touch Nail Boutique</strong>, we offer a luxurious escape where your nails are our canvas. From timeless classics to modern designs, our talented professionals ensure every client feels pampered and beautiful.</p>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center font-weight-bold mb-4">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <img src="/static/images/manicure.jpg" alt="Manicure" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h4>Manicures</h4>
+                <p class="text-muted">Classic, gel, and custom manicures for elegant hands.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="/static/images/pedicure.jpg" alt="Pedicure" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h4>Pedicures</h4>
+                <p class="text-muted">Relax and rejuvenate with our premium pedicure services.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="/static/images/nail-art.jpg" alt="Nail Art" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h4>Custom Nail Art</h4>
+                <p class="text-muted">Beautiful and unique nail art tailored to your style.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="font-weight-bold mb-4">What Our Clients Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="lead text-muted">"Absolutely love this place! My nails have never looked better. Highly recommend Ethereal Touch!"</p>
+                    <h5>- Sarah M.</h5>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead text-muted">"Professional and creative staff. The salon is clean, relaxing, and beautiful!"</p>
+                    <h5>- Amanda R.</h5>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 Ethereal Touch Nail Boutique | All Rights Reserved</p>
+        <p>Follow us: 
+            <a href="https://www.instagram.com/ethereal.touch.nail" class="text-white mx-2" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram: @ethereal.touch.nail
+            </a>
+            <a href="https://www.facebook.com/ethereal.touch.nail" class="text-white mx-2" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook: ethereal.touch.nail
+            </a>
+        </p>
+        
+        
+    </div>
+</footer>
+
+{% endblock %}
