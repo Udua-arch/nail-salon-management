@@ -52,10 +52,10 @@ This system helps salon owners efficiently manage daily activities while providi
 ![Homepage Screenshot](screenshots/Homepage.png)
 
 ### 🏠 Customers Page
-![Customers Page Screenshot](screenshots/Customers_Page.png)
+![Customers Page Screenshot](screenshots/Customers_page.png)
 
 ### 🏠 Appointments Page
-![Appointments Page Screenshot](screenshots/Appointments_Page.png)
+![Appointments Page Screenshot](screenshots/Appointments_page.png)
 
 ### 🏠 Services Page
 ![Services Page Screenshot](screenshots/Services_Page.png)
