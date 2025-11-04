@@ -61,6 +61,16 @@ This system helps salon owners efficiently manage daily activities while providi
 ![Services Page Screenshot](screenshots/Services_Page.png)
 
 
+---
+
+## 👩‍💻 Author
+
+**Mary Uduakobong Okon**  
+🎓 Computer Science Student
+📧 okonmary1502@gmail.com  
+🌍 [GitHub](https://github.com/Udua-arch) • [LinkedIn](https://www.linkedin.com/in/maryuduak/)
+
+
 
 
 
