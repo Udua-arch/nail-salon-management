@@ -46,4 +46,21 @@ This system helps salon owners efficiently manage daily activities while providi
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage Screenshot](screenshots/Homepage.png)
+
+### 🏠 Customers Page
+![Customers Page Screenshot](screenshots/Customers_Page.png)
+
+### 🏠 Appointments Page
+![Appointments Page Screenshot](screenshots/Appointments_Page.png)
+
+### 🏠 Services Page
+![Services Page Screenshot](screenshots/Services_Page.png)
+
+
+
+
 
